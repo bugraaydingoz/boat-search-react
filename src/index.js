@@ -16,10 +16,10 @@ ReactDOM.render(
     <ApolloProvider client={client}>
       <BrowserRouter>
         <Switch>
-          <Redirect exact from="/" to="/search" />
           <Route path="/search">
             <App />
           </Route>
+          <Redirect from="*" to="/search" />
         </Switch>
       </BrowserRouter>
     </ApolloProvider>
