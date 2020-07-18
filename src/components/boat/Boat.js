@@ -13,8 +13,8 @@ import {
   FlexEnd,
   Image,
   Heading3,
-  PrimaryText,
-  SecondaryText,
+  Text,
+  DetailText,
 } from './styles'
 
 export function Boat() {
@@ -30,16 +30,16 @@ export function Boat() {
         <Row>
           <Heading3>Sailboat Superior (1962)</Heading3>
           <Heading3>
-            10€ <SecondaryText>/ Day</SecondaryText>
+            10€ <Text secondary>/ Day</Text>
           </Heading3>
         </Row>
 
         {/* Reviews */}
         <Row>
           <Reviews score={3} reviews={100} />
-          <SecondaryText>
+          <Text secondary>
             <Icon name="location" /> Barcelona, Spain
-          </SecondaryText>
+          </Text>
         </Row>
 
         {/* Details */}
@@ -59,18 +59,22 @@ export function Boat() {
 function Details() {
   return (
     <>
-      <SecondaryText>
-        <Icon name="boat" /> <PrimaryText>32m</PrimaryText> long
-      </SecondaryText>
-      <SecondaryText>
-        <Icon name="skipper" /> Skipper is <PrimaryText>included</PrimaryText>
-      </SecondaryText>
-      <SecondaryText>
-        <Icon name="cabin" /> <PrimaryText>5</PrimaryText> cabins
-      </SecondaryText>
-      <SecondaryText>
-        <Icon name="guests" /> Up to <PrimaryText>10</PrimaryText> guests
-      </SecondaryText>
+      <DetailText>
+        <Icon name="boat" />
+        &nbsp; <Text primary>32m&nbsp;</Text> long
+      </DetailText>
+      <DetailText>
+        <Icon name="skipper" />
+        &nbsp; Skipper is <Text primary>&nbsp;included</Text>
+      </DetailText>
+      <DetailText>
+        <Icon name="cabin" />
+        &nbsp; <Text primary>5&nbsp;</Text> cabins
+      </DetailText>
+      <DetailText>
+        <Icon name="guests" />
+        &nbsp; Up to <Text primary>&nbsp;10&nbsp;</Text> guests
+      </DetailText>
     </>
   )
 }

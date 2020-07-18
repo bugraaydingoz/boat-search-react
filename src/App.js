@@ -6,6 +6,7 @@ import { Header } from './components/header'
 import { Footer } from './components/footer'
 import { BoatList } from './components/boat/BoatList'
 import { Boat } from './components/boat/Boat'
+import { Pagination } from './components/pagination'
 
 function App() {
   const { loading, error, data: { getBoats: boats } = [] } = useQuery(
@@ -19,17 +20,17 @@ function App() {
     <>
       <Header />
       <main>
+        {/* {loading && 'loading'}
+      {error && 'error'}
+      {!loading && boats.map((boat) => <div key={boat.id}>{boat.name}</div>)} */}
         <BoatList>
           <Boat />
           <Boat />
           <Boat />
           <Boat />
         </BoatList>
-        {/* TODO: Pagination */}
+        <Pagination totalPages={5} currentPage={1} />
       </main>
-      {/* {loading && 'loading'}
-      {error && 'error'}
-      {!loading && boats.map((boat) => <div key={boat.id}>{boat.name}</div>)} */}
       <Footer />
     </>
   )

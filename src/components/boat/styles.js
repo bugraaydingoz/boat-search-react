@@ -1,10 +1,10 @@
 import styled from 'styled-components'
 import { STYLES } from '../shared/styles'
 
-export const BoatListContainer = styled.main`
+export const BoatListContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 40px auto;
   width: 740px;
 `
 
@@ -34,18 +34,19 @@ export const Heading5 = styled.h5`
   color: ${STYLES.color.gray[600]};
 `
 
-export const PrimaryText = styled.span`
-  margin: 0;
+export const Text = styled.span`
+  display: inline-flex;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: ${STYLES.color.primary.default};
+  color: ${({ primary }) =>
+    !!primary ? STYLES.color.primary.default : STYLES.color.gray[600]};
 `
 
-export const SecondaryText = styled.span`
-  display: inline-flex;
-  margin: 0;
-  font-weight: 500;
+export const DetailText = styled.span`
+  display: flex;
+  margin: 0 0 5px 0;
+  font-weight: 400;
   font-size: 12px;
   line-height: 18px;
   color: ${STYLES.color.gray[600]};
