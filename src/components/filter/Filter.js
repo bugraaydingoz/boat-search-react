@@ -4,8 +4,8 @@ import React, { useState } from 'react'
 import { FilterContainer, Label, Input, InputContainer } from './styles'
 
 export function Filter({ name, value, handler }) {
-  const [min, setMin] = useState(0)
-  const [max, setMax] = useState(1000)
+  const [min, setMin] = useState(1990)
+  const [max, setMax] = useState(2020)
 
   return (
     <FilterContainer>

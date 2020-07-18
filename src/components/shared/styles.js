@@ -24,7 +24,7 @@ export const Button = styled.button`
   height: 40px;
   background-color: ${(props) => STYLES.color[props.color].default};
   border: none;
-  border-radius: 12px;
+  border-radius: ${STYLES.borderRadius};
   color: #fff;
   font-weight: 600;
   font-size: 14px;

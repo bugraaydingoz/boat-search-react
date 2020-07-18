@@ -8,7 +8,7 @@ export const SearchContainer = styled.div`
   width: 530px;
   height: 60px;
   background-color: #fff;
-  border-radius: 12px;
+  border-radius: ${STYLES.borderRadius};
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 `
 

@@ -1,8 +1,8 @@
 import React from 'react'
 
 // Styles
-import { FiltersContainer } from './styles'
+import { FilterListContainer } from './styles'
 
 export function FilterList({ children }) {
-  return <FiltersContainer>{children}</FiltersContainer>
+  return <FilterListContainer>{children}</FilterListContainer>
 }
