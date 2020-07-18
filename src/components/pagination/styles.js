@@ -22,6 +22,10 @@ export const PaginationButton = styled.button`
   line-height: 24px;
   color: ${({ selected }) => (selected ? '#000' : STYLES.color.gray[600])};
 
+  &:last-child {
+    margin-right: 0;
+  }
+
   &:hover {
     cursor: pointer;
   }

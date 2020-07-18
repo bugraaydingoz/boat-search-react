@@ -4,7 +4,7 @@ import { STYLES } from '../shared/styles'
 export const BoatListContainer = styled.div`
   display: flex;
   flex-direction: column;
-  margin: 0 auto 40px auto;
+  margin: 0 auto 60px auto;
   width: 740px;
 `
 
@@ -16,6 +16,10 @@ export const BoatContainer = styled.div`
   background-color: #fff;
   border-radius: ${STYLES.borderRadius};
   box-shadow: ${STYLES.boxShadow.card};
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `
 
 export const Heading3 = styled.h3`
@@ -55,6 +59,8 @@ export const DetailText = styled.span`
 export const Image = styled.img`
   display: flex;
   background-color: ${STYLES.color.primary.default};
+  border-bottom-left-radius: ${STYLES.borderRadius};
+  border-top-left-radius: ${STYLES.borderRadius};
   width: 340px;
   height: 100%;
 `
