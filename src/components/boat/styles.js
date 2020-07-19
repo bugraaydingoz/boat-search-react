@@ -9,6 +9,7 @@ export const BoatListContainer = styled.div`
 `
 
 export const BoatContainer = styled.div`
+  transition: 0.2s;
   display: flex;
   margin-bottom: 30px;
   width: 100%;
@@ -20,6 +21,42 @@ export const BoatContainer = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
+
+  &:hover {
+    box-shadow: ${STYLES.boxShadow.cardHover};
+  }
+`
+
+export const LoadingBoatContainer = styled.div`
+  transition: 0.2s;
+  display: flex;
+  margin-bottom: 30px;
+  width: 100%;
+  height: 210px;
+  background-color: #e7e7e7;
+  border-radius: ${STYLES.borderRadius};
+  box-shadow: ${STYLES.boxShadow.card};
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &:hover {
+    box-shadow: ${STYLES.boxShadow.cardHover};
+  }
+`
+
+export const EmptyStateContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  width: 100%;
+  text-align: center;
+`
+export const Heading2 = styled.h2`
+  font-weight: 600;
+  font-size: 26px;
+  color: ${STYLES.color.primary.default};
 `
 
 export const Heading3 = styled.h3`
