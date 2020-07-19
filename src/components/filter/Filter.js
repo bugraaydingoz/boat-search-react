@@ -1,7 +1,13 @@
 import React, { useState, useEffect } from 'react'
 
 // Styles
-import { FilterContainer, Label, Input, InputContainer } from './styles'
+import {
+  FilterContainer,
+  Label,
+  Input,
+  InputContainer,
+  Divider,
+} from './styles'
 
 export function Filter({ name, value, onChange }) {
   const [min, setMin] = useState('')
@@ -26,8 +32,8 @@ export function Filter({ name, value, onChange }) {
           onChange={(e) => setMin(e.target.value)}
           onBlur={() => onChange({ min, max })}
           onKeyPress={(e) => e.key === 'Enter' && onChange({ min, max })}
-        />{' '}
-        -{' '}
+        />
+        <Divider>-</Divider>
         <Input
           type="text"
           value={max}

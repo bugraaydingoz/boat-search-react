@@ -7,3 +7,7 @@ export const FooterFrame = styled.footer`
   height: 85px;
   background-color: #1b4b64;
 `
+
+export const Link = styled.a`
+  display: flex;
+`

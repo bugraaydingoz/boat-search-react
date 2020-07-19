@@ -4,12 +4,17 @@ import React from 'react'
 import { Icon } from '../shared'
 
 // Styles
-import { FooterFrame } from './styled'
+import { FooterFrame, Link } from './styled'
 
 export function Footer() {
   return (
     <FooterFrame>
-      <Icon name="github" />
+      <Link
+        href="https://github.com/bugraaydingoz/boat-search-react"
+        target="_blank"
+      >
+        <Icon name="github" />
+      </Link>
     </FooterFrame>
   )
 }
