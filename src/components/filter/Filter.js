@@ -24,7 +24,7 @@ export function Filter({ name, value, onChange }) {
 
   return (
     <FilterContainer>
-      <Label>{name}</Label>
+      <Label data-testid="filter-label">{name}</Label>
       <InputContainer>
         <Input
           type="text"

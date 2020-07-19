@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="sc-AxiKw ioCqkX"
+>
+  <label
+    className="sc-AxhCb fdKtUo"
+    data-testid="filter-label"
+  >
+    Length
+  </label>
+  <div
+    className="sc-AxhUy gWaiz"
+  >
+    <input
+      className="sc-AxgMl DnjmU"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyPress={[Function]}
+      type="text"
+      value=""
+    />
+    <span
+      className="sc-AxheI fUhWMh"
+    >
+      -
+    </span>
+    <input
+      className="sc-AxgMl DnjmU"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onKeyPress={[Function]}
+      type="text"
+      value=""
+    />
+  </div>
+</div>
+`;
