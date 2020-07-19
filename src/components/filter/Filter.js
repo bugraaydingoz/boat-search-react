@@ -25,6 +25,7 @@ export function Filter({ name, value, onChange }) {
           value={min}
           onChange={(e) => setMin(e.target.value)}
           onBlur={() => onChange({ min, max })}
+          onKeyPress={(e) => e.key === 'Enter' && onChange({ min, max })}
         />{' '}
         -{' '}
         <Input
@@ -32,6 +33,7 @@ export function Filter({ name, value, onChange }) {
           value={max}
           onChange={(e) => setMax(e.target.value)}
           onBlur={() => onChange({ min, max })}
+          onKeyPress={(e) => e.key === 'Enter' && onChange({ min, max })}
         />
       </InputContainer>
     </FilterContainer>

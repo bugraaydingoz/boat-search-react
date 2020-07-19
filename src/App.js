@@ -44,25 +44,22 @@ function App() {
   }, [boats])
 
   const { length, totalPages, paginatedBoats } = useFilter(boats, urlQuery)
-  const isEmpty = !loading && !boats.length && !paginatedBoats.length
+  const showEmptyState = !loading && boats.length && paginatedBoats.length === 0
+  const showBoats = !loading && boats.length && paginatedBoats.length > 0
   const randomBoat = () => Math.floor(Math.random() * boats.length)
 
-  console.log(1)
   return (
     <>
       <Header />
       <main>
         <BoatList loading={loading} length={length}>
-          {/* Loading indicator */}
           {loading &&
             new Array(3).fill(0).map((el, i) => <LoadingBoat key={i} />)}
 
-          {/* Filtered and paginated boats */}
-          {!loading &&
+          {showBoats &&
             paginatedBoats.map((boat) => <Boat key={boat.id} {...boat} />)}
 
-          {/* Empty state */}
-          {isEmpty && (
+          {showEmptyState && (
             <EmptyState boats={[boats[randomBoat()], boats[randomBoat()]]} />
           )}
         </BoatList>
