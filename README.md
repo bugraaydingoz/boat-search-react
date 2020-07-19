@@ -31,7 +31,7 @@ The application is designed by me and Figma was the tool of choice. You can see 
 
 ## Folder Structure
 
-I tried to keep the folder structures as simple as possible. Main folder here is `components` which is divided into smaller folders by feature. All components have their own file and they are exported from `index.js` to keep imports clean. Styled components are keps under a single file called `styles.js`
+I tried to keep the folder structures as simple as possible. Main folder here is `components` which is divided into smaller folders by feature. All components have their own file and they are exported from `index.js` to keep imports clean. Styled components are kept under a single file called `styles.js`
 
 ```
 .
