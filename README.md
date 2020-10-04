@@ -18,9 +18,7 @@ yarn && yarn start
 
 ## Design
 
-The application is designed by me and Figma was the tool of choice. You can see the raw design here:
-
-[Figma prototype link](https://www.figma.com/proto/dvlY7FAml74qv1bw7TGmS2/Zizoo-Boat-Search?node-id=1%3A2&viewport=679%2C272%2C0.2750151753425598&scaling=scale-down-width&hide-ui=1)
+The application is designed by me and Figma was the tool of choice.
 
 ## Technologies
 
@@ -53,10 +51,3 @@ I tried to keep the folder structures as simple as possible. Main folder here is
 ├── index.js
 └── index.css
 ```
-
-## TODOs
-
-- [ ] Migrate to TypeScript
-- [ ] Finish tests
-- [ ] Validate input
-- [ ] Design improvements
